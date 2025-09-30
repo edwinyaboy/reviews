@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌿 THCaBuzz – Honest THCa Vendor Reviews & Deals</title>
+  <meta name="description" content="Read honest THCa product reviews, ratings, and deals. Discover the best prerolls, flower, vapes, and edibles from trusted THCa sellers.">
+  <meta name="keywords" content="THCa reviews, THCa prerolls, THCa flower, THCa vapes, THCa edibles, THCa deals, hemp derived products">
+  <meta name="author" content="THCaBuzz">
+  <meta property="og:title" content="THCaBuzz – Honest THCa Product Reviews & Deals">
+  <meta property="og:description" content="Discover the best legal THCa products. Real reviews, ratings, and deals on prerolls, flower, vapes, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thcabuzz.com/">
+  <meta property="og:image" content="https://freesvg.org/img/420.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="THCaBuzz – THCa Reviews & Deals">
+  <meta name="twitter:description" content="Read reviews & ratings of the best THCa products. Save on prerolls, flower, vapes, and more.">
+  <meta name="twitter:image" content="https://freesvg.org/img/420.png">
+  <link rel="icon" type="image/png" href="https://freesvg.org/img/420.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "THCaBuzz",
+    "url": "https://thcabuzz.com/",
+    "description": "Reviews and deals on THCa prerolls, flower, vapes, and edibles.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "THCaBuzz"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://thcabuzz.com/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <style>
+    /* ===== Base Theme ===== */
+    :root {
+      --bg-dark: #111;
+      --bg-card: #1b1b1b;
+      --text-light: #eee;
+      --text-muted: #bbb;
+      --primary: #4caf50;
+      --accent-red: #ff4d4d;
+      --accent-gold: #ffd700;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== Header ===== */
+    header {
+      background: #0d0d0d;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid var(--primary);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo-link:hover { 
+      opacity: 0.85;
+      transform: scale(1.03);
+      transition: all 0.2s ease;
+    }
+
+    .logo {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 2rem;
+    }
+
+    .logo i { font-size: 2.5rem; }
+
+    .logo-tagline {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* ===== Main ===== */
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .age-disclaimer {
+      font-size: 0.85rem;
+      color: #bbb;
+      text-align: center;
+      margin-bottom: 30px;
+      line-height: 1.4;
+    }
+  
+    .age-disclaimer strong { 
+      color: var(--primary);
+      font-size: 2rem;
+    }
+
+    /* ===== Review Cards ===== */
+    .reviews { display: grid; gap: 20px; }
+
+    .review-card {
+      display: flex;
+      flex-direction: row;
+      background: var(--bg-card);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .review-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+    }
+
+    .review-card img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      background: #111;
+      flex-shrink: 0;
+    }
+
+    .review-content { padding: 12px; flex: 1; display: flex; flex-direction: column; }
+
+    .review-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;  /* default */
+      align-items: flex-start;      /* aligns children left */
+    }
+
+    .favorite-badge {
+      display: inline-block;
+      background: var(--accent-gold);
+      color: #000;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 1px 4px;
+      margin-left: 5px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+  
+    .alternative-badge {
+      display: inline-block;
+      background: #1abc9c; /* teal */
+      color: #000;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 1px 6px;
+      margin-left: 5px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .deal-link {
+      display: inline-block;
+      background: var(--accent-red);
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 16px;
+      border-radius: 8px;
+      margin-top: auto;
+      transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      
+      /* Prevent text selection or dragging */
+      user-select: none;
+      -webkit-user-drag: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+
+    .deal-link:hover {
+      background: #e63e3e;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transform: translateY(-2px);
+    }
+
+    /* ===== Rating Stars ===== */
+    .rating { display: inline-flex; gap: 4px; margin-bottom: 8px; margin-top: 8px;}
+    .rating svg { width: 22px; height: 22px; }
+
+    /* ===== Footer ===== */
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      color: var(--text-muted);
+      border-top: 2px solid var(--primary);
+      font-size: 0.9rem;
+    }
+    footer a { color: var(--primary); }
+
+    @media (max-width: 700px) {
+      .review-card { flex-direction: column; }
+      .review-card img { width: 100%; height: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#" class="logo-link" aria-label="THCaBuzz Home">
+    <h1 class="logo"><i class="fas fa-cannabis"></i> THCaBuzz</h1>
+    <p class="logo-tagline">Honest Reviews & Deals on Legal THCa</p>
+  </a>
+</header>
+
+<main>
+  <p class="age-disclaimer">
+    <strong>21+ Only</strong></br>
+    All reviews are for informational purposes only.</br>
+    We are not sponsored or directly affiliated with the brands reviewed.</br>
+  </p>
+
+  <section class="reviews">
+
+    <article class="review-card" itemscope itemtype="https://schema.org/Product">
+      <img loading="lazy" src="https://litfarms.com/cdn/shop/files/litfarms-logo-white-red-square.png" alt="LitFarms THCa" itemprop="image">
+      <div class="review-content">
+        <h3 itemprop="name">LitFarms <span class="favorite-badge">Personal Favorite!</span></h3>
+        <div class="rating" data-rating="4.5" aria-label="4.5 out of 5 stars"></div>
+        <p itemprop="description">
+          Great deals and decent product selection. Wide variety of strains to choose from. One of the few vendors with ounces starting at $19.99 to $29.99, not including shipping prices.
+        </p>
+        <a class="deal-link" href="https://litfarms.com/?sca_ref=9718951.vYUIL7Aawz&sca_crp=MjMzMjUw" target="_blank" rel="noopener" itemprop="url">Check Prices & Deals</a>
+      </div>
+    </article>
+
+    <article class="review-card" itemscope itemtype="https://schema.org/Product">
+      <img loading="lazy" src="https://s3-eu-west-1.amazonaws.com/tpd/logos/6022f3abf4117300014dbb4a/0x0.png" alt="JKDistro THCa" itemprop="image">
+      <div class="review-content">
+        <h3 itemprop="name">JKDistro <span class="alternative-badge">Great Alternative</span></h3>
+        <div class="rating" data-rating="4.0" aria-label="4 out of 5 stars"></div>
+        <p itemprop="description">
+          Solid selection of THCa flower. Another one of the few vendors with cheap ounces. Often runs promotions and bundle deals, with a mix of budget and premium options.
+        </p>
+        <a class="deal-link" href="https://jkdistro.com/?sld=dannyrocha" target="_blank" rel="noopener" itemprop="url">Check Prices & Deals</a>
+      </div>
+    </article>
+  
+    <article class="review-card" itemscope itemtype="https://schema.org/Product">
+      <div class="review-content">
+        <h3 itemprop="name">More Reviews Coming Soon!</h3>
+        <p itemprop="description">
+          I personally test and post reviews, offering a reliable, trustworthy perspective backed by over 15 years of smoking experience. I value both flavor and smell. I'm very picky about the quality before, during, and after the smoke. Everything matters. Especially the price.
+        </p>
+      </div>
+    </article>
+
+    <!-- Add More Reviews Here -->
+
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 THCaBuzz. All Rights Reserved.
+</footer>
+
+<script>
+  function renderStars(container, rating) {
+    const maxStars = 5;
+    container.innerHTML = "";
+    for (let i = 1; i <= maxStars; i++) {
+      const fill = Math.min(Math.max(rating - (i - 1), 0), 1);
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("viewBox", "0 0 24 24");
+      svg.setAttribute("fill", "none");
+
+      const bg = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      bg.setAttribute("d","M12 .587l3.668 7.568L24 9.75l-6 5.86 1.416 8.264L12 19.771l-7.416 4.103L6 15.61 0 9.75l8.332-1.595z");
+      bg.setAttribute("fill","#555");
+      svg.appendChild(bg);
+
+      if (fill > 0) {
+        const fg = document.createElementNS("http://www.w3.org/2000/svg","path");
+        fg.setAttribute("d","M12 .587l3.668 7.568L24 9.75l-6 5.86 1.416 8.264L12 19.771l-7.416 4.103L6 15.61 0 9.75l8.332-1.595z");
+        fg.setAttribute("fill","var(--primary)");
+
+        if (fill < 1) {
+          const clip = document.createElementNS("http://www.w3.org/2000/svg","clipPath");
+          const id = "clip-" + Math.random().toString(36).slice(2);
+          clip.setAttribute("id",id);
+          const rect = document.createElementNS("http://www.w3.org/2000/svg","rect");
+          rect.setAttribute("width",24*fill);
+          rect.setAttribute("height",24);
+          clip.appendChild(rect);
+          svg.appendChild(clip);
+          fg.setAttribute("clip-path",`url(#${id})`);
+        }
+        svg.appendChild(fg);
+      }
+      container.appendChild(svg);
+    }
+  }
+
+  document.querySelectorAll(".rating").forEach(el => {
+    renderStars(el, parseFloat(el.dataset.rating) || 0);
+  });
+
+  document.querySelectorAll('.deal-link').forEach(link => {
+    link.addEventListener('contextmenu', e => e.preventDefault());
+    link.addEventListener('mousedown', e => {
+      if(e.button === 1 || e.button === 2) e.preventDefault();
+    });
+  });
+
+  document.addEventListener('keydown', e => {
+    if(e.key === "F12") e.preventDefault();
+    if((e.ctrlKey || e.metaKey) && e.shiftKey && ['i','j','c'].includes(e.key.toLowerCase())) e.preventDefault();
+    if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'u') e.preventDefault();
+  });
+
+  let devtoolsOpen = false;
+  const threshold = 160;
+  setInterval(() => {
+    const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+    const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+    if(widthThreshold || heightThreshold){
+      if(!devtoolsOpen) console.clear();
+      devtoolsOpen = true;
+    } else {
+      devtoolsOpen = false;
+    }
+  }, 1000);
+
+  document.addEventListener('contextmenu', e => e.preventDefault());
+</script>
+</body>
+</html>
