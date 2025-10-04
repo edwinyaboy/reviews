@@ -5,560 +5,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>THCaBuzz – Honest THCa Reviews & Best Deals (2025)</title>
 
+  <!-- Meta -->
   <meta name="description" content="Read honest THCa product reviews, ratings, and deals. Discover the best prerolls, flower, vapes, and edibles from trusted THCa sellers.">
   <meta name="keywords" content="THCa reviews, THCa prerolls, THCa flower, THCa vapes, THCa edibles, THCa deals, hemp derived products">
   <meta name="author" content="THCaBuzz">
   <link rel="canonical" href="https://thcabuzz.com/">
 
+  <!-- Open Graph -->
   <meta property="og:title" content="THCaBuzz – Honest THCa Product Reviews & Deals">
   <meta property="og:description" content="Discover the best legal THCa products. Real reviews, ratings, and deals on prerolls, flower, vapes, and more.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://thcabuzz.com/">
-  <meta property="og:image" content="https://freesvg.org/img/420.png">
+  <meta property="og:image" content="media/420.webp">
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="THCaBuzz – THCa Reviews & Deals">
   <meta name="twitter:description" content="Read reviews & ratings of the best THCa products. Save on prerolls, flower, vapes, and more.">
-  <meta name="twitter:image" content="https://freesvg.org/img/420.png">
+  <meta name="twitter:image" content="media/420.webp">
 
-  <link rel="icon" type="image/png" href="https://freesvg.org/img/420.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="media/420.webp">
 
+  <!-- Preload images -->
+  <link rel="preload" as="image" href="media/420.webp">
+  <link rel="preload" as="image" href="media/litfarms.webp">
+  <link rel="preload" as="image" href="media/jkdistro.webp">
+  <link rel="preload" as="image" href="media/baysmokes.webp">
+
+  <!-- Fonts & Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "THCaBuzz",
-    "url": "https://thcabuzz.com/",
-    "description": "Reviews and deals on THCa prerolls, flower, vapes, and edibles.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "THCaBuzz"
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://thcabuzz.com/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "LitFarms",
-    "image": "https://litfarms.com/cdn/shop/files/litfarms-logo-white-red-square.png",
-    "description": "Great deals and decent product selection. Wide variety of strains to choose from. One of the few vendors with ounces starting at $19.99 to $29.99, not including shipping prices.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "bestRating": "5",
-      "worstRating": "0",
-      "ratingCount": "1"
-    },
-    "url": "https://litfarms.com/?sca_ref=9718951.vYUIL7Aawz&sca_crp=MjMzMjUw"
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "JKDistro",
-    "image": "https://s3-eu-west-1.amazonaws.com/tpd/logos/6022f3abf4117300014dbb4a/0x0.png",
-    "description": "Solid selection of THCa flower. Another one of the few vendors with cheap ounces. Often runs promotions and bundle deals, with a mix of budget and premium options.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.0",
-      "bestRating": "5",
-      "worstRating": "0",
-      "ratingCount": "1"
-    },
-    "url": "https://jkdistro.com/?sld=dannyrocha"
-  }
-  </script>
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Baysmokes",
-    "image": "https://media.licdn.com/dms/image/v2/C4E0BAQFeMLco3FwinQ/company-logo_200_200/company-logo_200_200/0/1630625560006?e=2147483647&v=beta&t=HFKTFc0h3PeY3_Ov04NlwRnbOU_FDtuBE9pq-UUkYt4",
-    "description": "Real hit or miss. Issues with suppliers causing moldy flower. Can get lucky with a good supplier, but there's always the risk of the moldy buds. Not recommended.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "2.5",
-      "bestRating": "5",
-      "worstRating": "0",
-      "ratingCount": "1"
-    },
-    "url": "https://baysmokes.com/"
-  }
-  </script>
-
-  <style>
-    /* ===== Base Theme ===== */
-    :root {
-      --bg-dark: #111;
-      --bg-card: #1b1b1b;
-      --text-light: #eee;
-      --text-muted: #bbb;
-      --primary: #4caf50;
-      --accent-red: #ff4d4d;
-      --accent-gold: #ffd700;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background: var(--bg-dark);
-      color: var(--text-light);
-      line-height: 1.6;
-    }
-    a { text-decoration: none; color: inherit; }
-
-    /* ===== Header ===== */
-    header {
-      background: #0d0d0d;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 2px solid var(--primary);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .logo-link:hover { 
-      opacity: 0.85;
-      transform: scale(1.03);
-      transition: all 0.2s ease;
-    }
-    .logo {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      font-size: 2rem;
-    }
-    .logo i { font-size: 2.5rem; }
-    .logo-tagline { font-size: 0.9rem; color: var(--text-muted); margin-top: 4px; }
-
-	/* ===== Main ===== */
-	main { 
-	  max-width: 1000px; 
-	  margin: 30px auto; /* keep centered */
-	  padding: 0 20px; 
-	}
-
-	.age-disclaimer { 
-	  font-size: 0.85rem; 
-	  color: #bbb; 
-	  text-align: center; 
-	  margin-bottom: 30px; 
-	  line-height: 1.4; 
-	}
-	.age-disclaimer strong { 
-	  color: var(--primary); 
-	  font-size: 2rem; 
-	}
-
-	.side-video {
-	  position: fixed;
-	  top: center; /* roughly vertical center */
-	  width: 15vw;       /* 15% of viewport width */
-	  max-width: 275px;  /* cap maximum width */
-	  height: auto;      /* let height scale automatically */
-	  max-height: 500px; /* cap maximum height */
-	  z-index: 9999;
-	}
-
-	.side-video video,
-	.side-video img {
-	  width: 100%;
-	  height: auto;
-	  object-fit: cover;
-	  border-radius: 8px;
-	  cursor: pointer;
-	}
-
-	/* Left / right placement */
-	.left-video { left: 80px; }
-	.right-video { right: 80px; }
-
-	@media (max-width: 1024px) {
-	  .side-video { display: none; }
-	}
-
-    /* ===== Review Cards ===== */
-    .reviews { display: grid; gap: 20px; }
-    .review-card {
-      display: flex;
-      flex-direction: row;
-      background: var(--bg-card);
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .review-card:hover { transform: translateY(-6px); box-shadow: 0 8px 16px rgba(0,0,0,0.6); }
-    .review-card img { width: 200px; height: 200px; object-fit: contain; background: #111; flex-shrink: 0; }
-    .review-content { padding: 12px; flex: 1; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
-
-    .favorite-badge {
-      display: inline-block;
-      background: var(--accent-gold);
-      color: #000;
-      font-size: 0.85rem;
-      font-weight: 700;
-      padding: 1px 4px;
-      margin-left: 5px;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    }
-    .alternative-badge {
-      display: inline-block;
-      background: #1abc9c;
-      color: #000;
-      font-size: 0.85rem;
-      font-weight: 700;
-      padding: 1px 6px;
-      margin-left: 5px;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    }
-
-    .deal-link {
-      display: inline-block;
-      background: var(--accent-red);
-      color: #fff;
-      font-weight: bold;
-      padding: 10px 16px;
-      border-radius: 8px;
-      margin-top: auto;
-      transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-      user-select: none;
-      -webkit-user-drag: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-    }
-    .deal-link:hover { background: #e63e3e; box-shadow: 0 4px 10px rgba(0,0,0,0.4); transform: translateY(-2px); }
-
-    .rating { display: inline-flex; gap: 4px; margin-bottom: 8px; margin-top: 8px;}
-    .rating svg { width: 22px; height: 22px; }
-
-    footer { margin-top: 40px; padding: 20px; text-align: center; color: var(--text-muted); border-top: 2px solid var(--primary); font-size: 0.9rem; }
-    footer a { color: var(--primary); }
-
-    @media (max-width: 700px) { .review-card { flex-direction: column; } .review-card img { width: 100%; height: auto; } }
-  </style>
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json" src="ld-json/website.json"></script>
+  <script type="application/ld+json" src="ld-json/product-litfarms.json"></script>
+  <script type="application/ld+json" src="ld-json/product-jkdistro.json"></script>
+  <script type="application/ld+json" src="ld-json/product-baysmokes.json"></script>
+  <script type="application/ld+json" src="ld-json/faq.json"></script>
 </head>
 <body>
 
 <header class="site-header">
-  <a href="#" class="logo-link" aria-label="THCaBuzz Home">
-    <h1 class="logo"><i class="fas fa-cannabis"></i> THCaBuzz</h1>
-    <p class="logo-tagline">Honest Reviews & Deals on Legal THCa</p>
+  <a href="https://thcabuzz.com/" class="logo-link" aria-label="THCaBuzz Home">
+    <h1 class="logo"><i class="fas fa-cannabis"></i> THCaBuzz <span class="hidden-subtitle">– Honest THCa Reviews & Best Deals</span></h1>
+    <p class="logo-tagline">Your #1 Source for Legal THCa Flower, Prerolls, and Vape Reviews</p>
   </a>
 </header>
 
 <main>
-  <p class="age-disclaimer">
-    <strong>21+ Only</strong><br>
-    All reviews are for informational purposes only.<br>
-    We are not sponsored or directly affiliated with the brands reviewed.<br>
-  </p>
+  <p class="age-disclaimer"><strong>21+ Only</strong><br>All reviews are for informational purposes only. We are not sponsored or directly affiliated with the brands reviewed.</p>
 
-<a href="contact" target="_blank" class="side-video left-video">
-  <video autoplay loop muted playsinline>
-    <source src="video.mp4" type="video/mp4">
-  </video>
-</a>
+  <!-- Side Videos -->
+  <a href="contact" class="side-video left-video">
+    <video autoplay loop muted playsinline>
+      <source src="media/video.mp4" type="video/mp4">
+    </video>
+  </a>
+  <a href="contact" class="side-video right-video">
+    <video autoplay loop muted playsinline>
+      <source src="media/video.mp4" type="video/mp4">
+    </video>
+  </a>
 
-<a href="contact" target="_blank" class="side-video right-video">
-  <video autoplay loop muted playsinline>
-    <source src="video.mp4" type="video/mp4">
-  </video>
-</a>
-
-
-  <section class="reviews">
-
+  <!-- Reviews Section -->
+  <section id="deals" class="reviews">
     <article class="review-card" itemscope itemtype="https://schema.org/Product">
-      <img loading="lazy" src="https://litfarms.com/cdn/shop/files/litfarms-logo-white-red-square.png" alt="LitFarms THCa" itemprop="image">
+      <img loading="eager" src="media/litfarms.webp" alt="LitFarms THCa" itemprop="image" width="200" height="200">
       <div class="review-content">
-        <h3 itemprop="name">LitFarms <span class="favorite-badge">Personal Favorite!</span></h3>
+        <h2 itemprop="name">LitFarms <span class="favorite-badge">Personal Favorite!</span></h2>
         <div class="rating" data-rating="4.5" aria-label="4.5 out of 5 stars"></div>
         <p itemprop="description">
-          Great deals and decent product selection. Wide variety of strains to choose from. One of the few vendors with ounces starting at $19.99 to $29.99, not including shipping prices.
+          Great deals and a solid product selection. LitFarms offers a wide variety of strains, with ounces starting at $19.99 to $29.99 (excluding shipping). Ideal for both new and experienced users.
         </p>
-        <a class="deal-link" href="https://litfarms.com/?sca_ref=9718951.vYUIL7Aawz&sca_crp=MjMzMjUw" target="_blank" rel="noopener" itemprop="url">Check Prices & Deals</a>
+        <a class="deal-link" href="https://litfarms.com/?sca_ref=9718951.vYUIL7Aawz&sca_crp=MjMzMjUw" target="_blank" rel="noopener" itemprop="url">
+          Check Prices & Deals
+        </a>
       </div>
     </article>
 
     <article class="review-card" itemscope itemtype="https://schema.org/Product">
-      <img loading="lazy" src="https://s3-eu-west-1.amazonaws.com/tpd/logos/6022f3abf4117300014dbb4a/0x0.png" alt="JKDistro THCa" itemprop="image">
+      <img loading="eager" src="media/jkdistro.webp" alt="JKDistro THCa" itemprop="image" width="200" height="200">
       <div class="review-content">
-        <h3 itemprop="name">JKDistro <span class="alternative-badge">Great Alternative</span></h3>
+        <h2 itemprop="name">JKDistro <span class="alternative-badge">Great Alternative</span></h2>
         <div class="rating" data-rating="4.0" aria-label="4 out of 5 stars"></div>
         <p itemprop="description">
-          Solid selection of THCa flower. Another one of the few vendors with cheap ounces. Often runs promotions and bundle deals, with a mix of budget and premium options.
+          Solid selection of THCa flower with affordable ounces. JKDistro frequently runs promotions and bundle deals, mixing budget and premium options for every user.
         </p>
-        <a class="deal-link" href="https://jkdistro.com/?sld=dannyrocha" target="_blank" rel="noopener" itemprop="url">Check Prices & Deals</a>
+        <a class="deal-link" href="https://jkdistro.com/?sld=dannyrocha" target="_blank" rel="noopener" itemprop="url">
+          Check Prices & Deals
+        </a>
       </div>
     </article>
-	
-	<article class="review-card" itemscope itemtype="https://schema.org/Product">
-      <img loading="lazy" src="https://media.licdn.com/dms/image/v2/C4E0BAQFeMLco3FwinQ/company-logo_200_200/company-logo_200_200/0/1630625560006?e=2147483647&v=beta&t=HFKTFc0h3PeY3_Ov04NlwRnbOU_FDtuBE9pq-UUkYt4" alt="Baysmokes THCa" itemprop="image">
+
+    <article class="review-card" itemscope itemtype="https://schema.org/Product">
+      <img loading="eager" src="media/baysmokes.webp" alt="Baysmokes THCa" itemprop="image" width="200" height="200">
       <div class="review-content">
-        <h3 itemprop="name">Baysmokes</h3>
+        <h2 itemprop="name">Baysmokes</h2>
         <div class="rating" data-rating="2.5" aria-label="2.5 out of 5 stars"></div>
         <p itemprop="description">
-          Real hit or miss. Issues with suppliers causing moldy flower. Can get lucky with a good supplier, but there's always the risk of the moldy buds. Not recommended.
+          Hit or miss. Supplier issues can cause moldy flower. Can get lucky with a good batch, but risk is high. Not recommended for most buyers.
         </p>
-        <a class="deal-link" href="https://baysmokes.com/" target="_blank" rel="noopener" itemprop="url">Check Prices & Deals</a>
+        <a class="deal-link" href="https://baysmokes.com/" target="_blank" rel="noopener" itemprop="url">
+          Check Prices & Deals
+        </a>
       </div>
     </article>
 
     <article class="review-card" itemscope itemtype="https://schema.org/Product">
       <div class="review-content">
-        <h3 itemprop="name">More Reviews Coming Soon!</h3>
+        <h2 itemprop="name">More Reviews Coming Soon!</h2>
         <p itemprop="description">
-          I personally test and post reviews, offering a reliable, trustworthy perspective backed by over 15 years of smoking experience. I value both flavor and smell. I'm very picky about the quality before, during, and after the smoke. Everything matters. Especially the price.
+          I personally test and post reviews, offering a reliable, trustworthy perspective backed by over 15 years of experience. I prioritize flavor, smell, and overall quality. Every detail matters, especially price and consistency.
         </p>
       </div>
     </article>
-
   </section>
-  
+
+  <!-- FAQ Section -->
   <section class="faq-section">
-  <h2>Frequently Asked Questions</h2>
-  
-  <div class="faq-item">
-    <button class="faq-question">What is THCa? <i class="fas fa-chevron-down"></i></button>
-    <div class="faq-answer">
-      <p>THCa (tetrahydrocannabinolic acid) is the natural, raw form of THC found in cannabis flower.
-          When heated (smoked or vaped), THCa converts into regular THC – the same compound that gets
-          you high in traditional weed. In other words, THCa flower is <strong>literally the same thing as weed</strong>,
-          just sold under hemp laws.</p>
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">What is THCa? <i class="fas fa-chevron-down"></i></button>
+      <div class="faq-answer"><p>THCa (tetrahydrocannabinolic acid) is the natural, raw form of THC found in cannabis flower. It becomes psychoactive THC when heated.</p><br></div>
     </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question">Does THCa get you high? <i class="fas fa-chevron-down"></i></button>
-    <div class="faq-answer">
-      <p>Yes. Once you light it up or vape it, THCa turns into THC and produces the same effects as regular cannabis.
-          The high, flavor, and experience are identical to dispensary weed.</p>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">Does THCa get you high? <i class="fas fa-chevron-down"></i></button>
+      <div class="faq-answer"><p>Yes. When heated (smoked or vaped), THCa converts into THC and produces the same effects as traditional cannabis.</p><br></div>
     </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question">How can this be legal? <i class="fas fa-chevron-down"></i></button>
-    <div class="faq-answer">
-      <p>Thanks to the 2018 Farm Bill, hemp products containing less than 0.3% delta-9 THC are federally legal.
-          THCa itself doesn’t count toward that 0.3% limit until it’s heated – creating a loophole that allows
-          vendors to sell potent cannabis flower legally online.</p>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">How can this be legal? <i class="fas fa-chevron-down"></i></button>
+      <div class="faq-answer"><p>Hemp-derived THCa with less than 0.3% delta-9 THC is federally legal under the 2018 Farm Bill. THCa itself is non-psychoactive until heated.</p><br></div>
     </div>
-  </div>
-  
-  <div class="faq-item">
-      <button class="faq-question">What states can this be shipped to? <i class="fas fa-chevron-down"></i></button>
-      <div class="faq-answer">
-        <p>
-          THCa flower can still be shipped to most U.S. states. However, some states have banned sales or shipping of
-          hemp-derived products. At the time of writing, THCa flower is <strong>not allowed</strong> in:
-        </p>
-        <ul>
-          Arkansas<br>
-          Idaho<br>
-          Kansas<br>
-          Kentucky<br>
-          Louisiana<br>
-          Minnesota<br>
-          Oregon<br>
-          Rhode Island<br>
-          Utah<br>
-        </ul>
-        <p><strong>Always</strong> double-check your local laws before ordering.</p>
-      </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">What states can this be shipped to? <i class="fas fa-chevron-down"></i></button>
+      <div class="faq-answer"><p>THCa flower cannot be shipped to certain states including:<br><br>Arkansas<br>Idaho<br>Kansas<br>Kentucky<br>Louisiana<br>Minnesota<br>Oregon<br>Rhode Island<br>Utah<br><br><strong>Always</strong> check local laws.</p><br></div>
     </div>
-</section>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is THCa?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "THCa (tetrahydrocannabinolic acid) is the natural, raw form of THC found in cannabis flower. It becomes psychoactive THC when heated."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does THCa get you high?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. When heated (smoked or vaped), THCa converts into THC and produces the same effects as traditional cannabis."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can this be legal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hemp-derived THCa with less than 0.3% delta-9 THC is federally legal under the 2018 Farm Bill. THCa itself is non-psychoactive until heated."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What states can this be shipped to?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "THCa flower cannot be shipped to certain states including Arkansas, Idaho, Kansas, Kentucky, Louisiana, Minnesota, Oregon, Rhode Island, and Utah. Always check local laws."
-      }
-    }
-  ]
-}
-</script>
-
-<style>
-  .faq-section {
-    margin: 40px auto;
-    max-width: 900px;
-    padding: 0 20px;
-    color: var(--text-light);
-  }
-  .faq-section h2 {
-    font-size: 1.8rem;
-    color: var(--primary);
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .faq-item {
-    background: var(--bg-card);
-    border-radius: 12px;
-    margin-bottom: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  }
-  .faq-question {
-    width: 100%;
-    text-align: left;
-    padding: 16px;
-    background: var(--bg-card);
-    color: var(--text-light);
-    font-size: 1rem;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .faq-question:hover { background: #222; }
-  .faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
-    padding: 0 16px;
-  }
-  .faq-answer p, .faq-answer ul {
-    margin: 12px 0;
-    line-height: 1.5;
-    color: var(--text-muted);
-  }
-  .faq-answer ul { padding-left: 20px; list-style: disc; }
-  .faq-item.open .faq-answer { max-height: 500px; padding: 12px 16px; }
-</style>
-
-<script>
-  document.querySelectorAll('.faq-question').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.parentElement;
-      item.classList.toggle('open');
-    });
-  });
-</script>
-  
+  </section>
 </main>
 
 <footer>
   &copy; 2025 THCaBuzz. All Rights Reserved.
 </footer>
 
-<script>
-  function renderStars(container, rating) {
-    const maxStars = 5;
-    container.innerHTML = "";
-    for (let i = 1; i <= maxStars; i++) {
-      const fill = Math.min(Math.max(rating - (i - 1), 0), 1);
-      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-      svg.setAttribute("viewBox", "0 0 24 24");
-      svg.setAttribute("fill", "none");
-
-      const bg = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      bg.setAttribute("d","M12 .587l3.668 7.568L24 9.75l-6 5.86 1.416 8.264L12 19.771l-7.416 4.103L6 15.61 0 9.75l8.332-1.595z");
-      bg.setAttribute("fill","#555");
-      svg.appendChild(bg);
-
-      if (fill > 0) {
-        const fg = document.createElementNS("http://www.w3.org/2000/svg","path");
-        fg.setAttribute("d","M12 .587l3.668 7.568L24 9.75l-6 5.86 1.416 8.264L12 19.771l-7.416 4.103L6 15.61 0 9.75l8.332-1.595z");
-        fg.setAttribute("fill","var(--primary)");
-
-        if (fill < 1) {
-          const clip = document.createElementNS("http://www.w3.org/2000/svg","clipPath");
-          const id = "clip-" + Math.random().toString(36).slice(2);
-          clip.setAttribute("id",id);
-          const rect = document.createElementNS("http://www.w3.org/2000/svg","rect");
-          rect.setAttribute("width",24*fill);
-          rect.setAttribute("height",24);
-          clip.appendChild(rect);
-          svg.appendChild(clip);
-          fg.setAttribute("clip-path",`url(#${id})`);
-        }
-        svg.appendChild(fg);
-      }
-      container.appendChild(svg);
-    }
-  }
-  document.querySelectorAll(".rating").forEach(el => {
-    renderStars(el, parseFloat(el.dataset.rating) || 0);
-  });
-
-  document.querySelectorAll('.deal-link').forEach(link => {
-    link.addEventListener('contextmenu', e => e.preventDefault());
-    link.addEventListener('mousedown', e => { if(e.button === 1 || e.button === 2) e.preventDefault(); });
-  });
-
-  document.addEventListener('keydown', e => {
-    if(e.key === "F12") e.preventDefault();
-    if((e.ctrlKey || e.metaKey) && e.shiftKey && ['i','j','c'].includes(e.key.toLowerCase())) e.preventDefault();
-    if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'u') e.preventDefault();
-  });
-
-  let devtoolsOpen = false;
-  const threshold = 160;
-  setInterval(() => {
-    const widthThreshold = window.outerWidth - window.innerWidth > threshold;
-    const heightThreshold = window.outerHeight - window.innerHeight > threshold;
-    if(widthThreshold || heightThreshold){
-      if(!devtoolsOpen) console.clear();
-      devtoolsOpen = true;
-    } else {
-      devtoolsOpen = false;
-    }
-  }, 1000);
-
-  document.addEventListener('contextmenu', e => e.preventDefault());
-</script>
-
+<!-- Main JS -->
+<script src="js/main.js" defer></script>
 </body>
 </html>
