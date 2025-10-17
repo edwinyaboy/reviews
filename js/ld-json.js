@@ -1,21 +1,37 @@
+<script>
 const ldJson = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Product",
-      "name": "LitFarms",
+      "name": "LitFarms Personal Favorite!",
+      "brand": {
+        "@type": "Brand",
+        "name": "LitFarms"
+      },
       "image": "https://thcabuzz.com/media/litfarms.webp",
-      "description": "Great deals and a solid product selection. LitFarms offers a wide variety of strains, with ounces starting at $19.99 to $29.99 (excluding shipping). Ideal for both new and experienced users.",
+      "description": "LitFarms offers quality THCa flower and prerolls at great prices. Shop top strains with ounces starting from $19.99—perfect for new and experienced users.",
       "url": "https://thcabuzz.com/lf",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.5",
         "reviewCount": "1"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "19.99",
+        "availability": "https://schema.org/InStock",
+        "url": "https://thcabuzz.com/lf"
       }
     },
     {
       "@type": "Product",
       "name": "JKDistro",
+      "brand": {
+        "@type": "Brand",
+        "name": "JKDistro"
+      },
       "image": "https://thcabuzz.com/media/jkdistro.webp",
       "description": "Solid selection of THCa flower with affordable ounces. JKDistro frequently runs promotions and bundle deals, mixing budget and premium options for every user.",
       "url": "https://thcabuzz.com/jkd",
@@ -23,11 +39,22 @@ const ldJson = {
         "@type": "AggregateRating",
         "ratingValue": "4.0",
         "reviewCount": "1"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "24.99",
+        "availability": "https://schema.org/InStock",
+        "url": "https://thcabuzz.com/jkd"
       }
     },
     {
       "@type": "Product",
       "name": "Baysmokes",
+      "brand": {
+        "@type": "Brand",
+        "name": "Baysmokes"
+      },
       "image": "https://thcabuzz.com/media/baysmokes.webp",
       "description": "Hit or miss. Supplier issues can cause moldy flower. Can get lucky with a good batch, but risk is high. Not recommended for most buyers.",
       "url": "https://thcabuzz.com/bs",
@@ -35,18 +62,36 @@ const ldJson = {
         "@type": "AggregateRating",
         "ratingValue": "2.5",
         "reviewCount": "1"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "19.99",
+        "availability": "https://schema.org/InStock",
+        "url": "https://thcabuzz.com/bs"
       }
     },
     {
       "@type": "Product",
       "name": "ShopHelloMary",
+      "brand": {
+        "@type": "Brand",
+        "name": "ShopHelloMary"
+      },
       "image": "https://thcabuzz.com/media/hellomary.webp",
-      "description": "Decent products. However, everything is well overpriced for what you get. Save your money and don't shop hello mary. Look elsewhere.",
+      "description": "Decent products, but everything is overpriced for what you get. Save your money and shop elsewhere.",
       "url": "https://thcabuzz.com/shm",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "2.0",
         "reviewCount": "1"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "29.99",
+        "availability": "https://schema.org/InStock",
+        "url": "https://thcabuzz.com/shm"
       }
     },
     {
@@ -94,3 +139,4 @@ const script = document.createElement('script');
 script.type = 'application/ld+json';
 script.text = JSON.stringify(ldJson);
 document.head.appendChild(script);
+</script>
