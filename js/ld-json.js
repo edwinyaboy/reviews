@@ -1,4 +1,3 @@
-<script>
 const ldJson = {
   "@context": "https://schema.org",
   "@graph": [
@@ -139,4 +138,3 @@ const script = document.createElement('script');
 script.type = 'application/ld+json';
 script.text = JSON.stringify(ldJson);
 document.head.appendChild(script);
-</script>
